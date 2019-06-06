@@ -133,13 +133,13 @@ table {
 html,
 body {
   height: 100%;
-  background-color: purple;
+  background-color: #d089ff;
   font-size: 62.5%;
 }
 .container {
   width: 80%;
   margin: 0 10%;
-  padding: 0 10%;
+  padding: 0 10% 5% 10%;
   background-color: #fff;
   font-size: 1.5rem;
 }
@@ -161,6 +161,7 @@ nav .nav-links a {
 header {
   background-color: #ddd;
   padding: 5%;
+  margin-bottom: 5%;
 }
 header .header-img img {
   width: 40%;
@@ -180,8 +181,9 @@ header p {
   padding-bottom: 15px;
 }
 .row {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
   padding: 5%;
 }
 .row .column {
