@@ -54,6 +54,93 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: @lightPurple;
+	font-size: 62.5%
 }
 
+// less variables
+@colorPurple: purple;
+@firstHeadingSize: 3rem;
+@secondHeadingSize: 2.2rem;
+@backgroundGray: #ddd;
+@lightPurple: #d089ff;
+
+// less mixins
+.purpleText() {
+	color: @colorPurple;
+	font-size: @firstHeadingSize;
+}
+
+// my css
+
+.container {
+	width: 80%;
+	margin: 0 10%;
+	padding: 0 10% 5% 10%;
+	background-color: #fff;
+	font-size: 1.5rem;
+}
+
+// navigation styles
+nav {
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px 50px;
+
+	.nav-links {
+		display: flex;
+		justify-content: space-between;
+		width: 30%;	
+
+		a {
+			text-decoration: none;
+			font-size: 1.7rem;
+			color: @colorPurple;
+		}
+	}		
+}
+
+// header styles
+header {
+	background-color: @backgroundGray;
+	padding: 5%;
+	margin-bottom: 5%;
+
+	.header-img img {
+		width: 40%;
+		height: auto;
+		padding-bottom: 15px;
+	}
+
+	h1 {
+		.purpleText();
+		padding-bottom: 15px;
+	}
+
+	h2 {
+		font-size: @secondHeadingSize;
+		padding-bottom: 15px;
+	}
+	
+	p{
+		padding-bottom: 15px;
+	}
+}
+
+// row styles
+.row {
+	display: flex;
+	justify-content: space-between;
+	background-color: @backgroundGray;
+	padding: 5%;
+
+	.column {
+		flex-direction: column;
+		width: 48%;
+
+		h1 {
+			font-size: @secondHeadingSize;
+		}
+	}
+}
